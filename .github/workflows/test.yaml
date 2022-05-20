@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup PNPM
-      - uses: pnpm/action-setup@v2.2.1
+        uses: pnpm/action-setup@v2.2.1
         with:
           run_install: true
       - run: pnpx playwright install-deps chromium

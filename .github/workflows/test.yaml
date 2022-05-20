@@ -9,4 +9,5 @@ jobs:
         with:
           node-version: 16
       - run: npx --yes playwright@1.19.1 install --with-deps
+      - run: npm install
       - run: npm playwright test
